@@ -6495,7 +6495,7 @@ a.text-dark:hover, a.text-dark:focus {
   border-radius: 0;
   height: 100vh;
   position: relative;
-  background-image: url("background-1 2.jpg");
+  background-image: url("../background-1 2.jpg");
   background-size: cover; }
   .title-bg .title-container {
     position: absolute;
