@@ -192,7 +192,7 @@ nav.navbar {
 .maps-frame {
   border-top: 4px solid $primary;
   width: 100vw;
-  height: 500px;
+  height: calc(100vh - 250px);
 
   iframe {
     width: 100%;
@@ -233,7 +233,16 @@ nav.navbar {
  .container-fluid {
    .card {
      position: relative;
-     height: calc(100vh - 150px);
+     height: 400px;
+     transition: 0.25s ease;
+     filter: brightness(0.75) drop-shadow(0 0 0 transparent);
+     &:hover {
+       transform: scale(1.05) translateY(10px);
+       z-index: 100;
+       filter: brightness(1) drop-shadow(0 0 5px rgba(0, 0, 0, 0.75));
+     }
+
+
      img.specialized {
        position: absolute;
        bottom: 10px;
@@ -242,8 +251,14 @@ nav.navbar {
      }
    }
    .card-img-top{
-     height: 35%;
+     height: 50%;
    }
+ }
+
+ .specialize {
+   position: relative;
+   height: calc(100vh - 100px);
+
  }
 
  .rectangle {
@@ -281,4 +296,10 @@ nav.navbar {
      background-image: url(../nidodape11.jpg);
 
    }
+ }
+
+ footer {
+   font-family: 'Julius Sans One', sans-serif;
+   border-top: white solid 1px;
+   font-size: 10px;
  }

@@ -6621,7 +6621,7 @@ nav.navbar {
 .maps-frame {
   border-top: 4px solid gold;
   width: 100vw;
-  height: 500px; }
+  height: calc(100vh - 250px); }
   .maps-frame iframe {
     width: 100%;
     height: 100%; }
@@ -6653,14 +6653,24 @@ nav.navbar {
 
 .container-fluid .card {
   position: relative;
-  height: calc(100vh - 150px); }
+  height: 400px;
+  transition: 0.25s ease;
+  filter: brightness(0.75) drop-shadow(0 0 0 transparent); }
+  .container-fluid .card:hover {
+    transform: scale(1.05) translateY(10px);
+    z-index: 100;
+    filter: brightness(1) drop-shadow(0 0 5px rgba(0, 0, 0, 0.75)); }
   .container-fluid .card img.specialized {
     position: absolute;
     bottom: 10px;
     right: 10px;
     width: 35%; }
 .container-fluid .card-img-top {
-  height: 35%; }
+  height: 50%; }
+
+.specialize {
+  position: relative;
+  height: calc(100vh - 100px); }
 
 .rectangle {
   width: 90%;
@@ -6689,5 +6699,10 @@ nav.navbar {
   .photocontainer:nth-of-type(2) {
     margin-left: auto;
     background-image: url(../nidodape11.jpg); }
+
+footer {
+  font-family: 'Julius Sans One', sans-serif;
+  border-top: white solid 1px;
+  font-size: 10px; }
 
 /*# sourceMappingURL=style.css.map */
