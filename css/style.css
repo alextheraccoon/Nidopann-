@@ -6687,6 +6687,8 @@ nav.navbar {
     width: 60vw; }
     .chisiamo img:last-of-type {
       margin-left: auto; }
+  .chisiamo h1 {
+    font-family: 'Julius Sans One', sans-serif; }
 
 .photocontainer {
   height: calc(50vh - 50px);
