@@ -1,0 +1,20 @@
+extends layout
+
+block content
+  body.bg-dark
+    include includes/main-menu
+    .menu-toggler(onclick='menuToggle()')
+    nav.navbar.navbar-light.bg-light.justify-content-between
+      a.navbar-brand(href='#')
+        img.d-inline-block.align-top(src='img/logo/logo.png', width='140', height='60', alt='')
+        |            Chi siamo
+      form.form-inline
+        input.form-control.mr-sm-2(type='search', placeholder='Search', aria-label='Search')
+        button.btn.btn-outline-primary.my-2.my-sm-0(type='submit') Cerca
+    .chisiamo
+      .photocontainer
+      .photocontainer
+      .rectangle.container-fluid
+        h1.text-white  La nostra storia 
+        p.text-white.p-3
+          | Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
