@@ -4,25 +4,25 @@ var router = express.Router();
 /* GET home page. */
 router.get('/', function(req, res, next) {
   res.render('home', {
-    title: 'Express'
+    title: 'Nidopann - Home'
   });
 });
 
 router.get('/lavorazioni', function(req, res, next) {
   res.render('works', {
-    title: 'Express'
+    title: 'Nidoman - Lavorazioni'
   });
 });
 
 router.get('/contatti', function(req, res, next) {
   res.render('contacts', {
-    title: 'Express'
+    title: 'Nidopann - Contatti'
   });
 });
 
 router.get('/chi-siamo', function(req, res, next) {
   res.render('about', {
-    title: 'Express'
+    title: 'Nidopann - Chi Siamo'
   });
 });
 
