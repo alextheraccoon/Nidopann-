@@ -7,6 +7,13 @@ html
     link(href='https://fonts.googleapis.com/css?family=Raleway|Julius+Sans+One', rel='stylesheet')
     link(rel='stylesheet', href='/stylesheets/style.min.css')
   body
+    .lang-chooser
+      if lang == 'it'
+        a(href=path+'lang/en')
+          img(src='/img/icons/gb.png')
+      else
+        a(href=path+'lang/it')
+          img(src='/img/icons/it.png')
     block content
     footer.text-white.text-center  Copyright © Alessandra Vicini 
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')

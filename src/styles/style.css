@@ -6243,3 +6243,10 @@ footer {
   font-family: 'Julius Sans One', sans-serif;
   border-top: white solid 1px;
   font-size: 10px; }
+
+.lang-chooser {
+  position: absolute;
+  bottom: 0;
+  right: 0;
+  margin: 1em;
+  z-index: 100; }

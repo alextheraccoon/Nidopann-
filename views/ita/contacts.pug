@@ -1,0 +1,44 @@
+extends ../layout
+
+block content
+  body.bg-dark
+    include includes/main-menu
+    include includes/navbar
+    .row.container-fluid.mx-auto
+      .col-lg-4.text-center.px-3.d-flex.align-items-center
+        img.img-fluid(src='img/icons/map.svg', alt='')
+        .contacts-text.text-left.text-light
+          p.mb-0.lead.ml-4.text-primary Viale Brianza 56
+          p.mb-0.lead.ml-4 20823 Lentate sul Seveso
+          p.mb-0.lead.ml-4
+            | Monza e Brianza, 
+            b Italy
+      .col-lg-4.text-center.px-3.d-flex.align-items-center
+        img.img-fluid(src='img/icons/fax.svg', alt='')
+        .contacts-text.text-primary.text-right
+          a(href='tel:+390362560436')
+            p.mb-0.lead.ml-4
+              | Fisso: 
+              span.text-white.float-right.ml-3
+                b +39
+                |  0362 560436
+          a(href='tel:+393934034971')
+            p.mb-0.lead.ml-4
+              | Mobile: 
+              span.text-white.float-right.ml-3
+                b +39
+                |  393 4034971
+          p.mb-0.lead.ml-4
+            | Fax: 
+            span.text-white.float-right.ml-3
+              b +39
+              |  0362 557078
+      .col-lg-4.text-center.px-3.d-flex.align-items-center
+        img.img-fluid(src='img/icons/email.svg', alt='')
+        .contacts-text.text-primary.text-right
+          a(href='mailto: nidopann@gmail.com')
+            p.mb-0.lead.ml-4
+              | E-Mail: 
+              span.text-white.float-right.ml-3 nidopann@gmail.com
+    .w-100.maps-frame
+      iframe(src='https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2460.90973756173!2d9.135897866639999!3d45.67237820866192!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x478697ea679e51a9%3A0x6b07446473436595!2sViale+Brianza%2C+56%2C+20823+Lentate+sul+Seveso+MB%2C+Italia!5e0!3m2!1sit!2sch!4v1517935051026', frameborder='0', style='border:0', allowfullscreen='')
