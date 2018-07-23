@@ -9,11 +9,14 @@ html
   body
     .lang-chooser
       if lang == 'it'
-        a(href=path+'lang/en')
-          img(src='/img/icons/gb.png')
+        a(href='/en'+path)
+          img(src='/img/icons/it.svg' width='50')
+      else if lang == 'en'
+        a(href='/de'+path)
+          img(src='/img/icons/gb.svg' width='50')
       else
-        a(href=path+'lang/it')
-          img(src='/img/icons/it.png')
+        a(href='/en'+path)
+          img(src='/img/icons/de.svg' width='50')
     block content
     footer.text-white.text-center  Copyright © Alessandra Vicini 
     script(src='https://code.jquery.com/jquery-3.2.1.slim.min.js', integrity='sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN', crossorigin='anonymous')

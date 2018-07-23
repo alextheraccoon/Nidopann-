@@ -6029,7 +6029,7 @@ a.text-dark:hover, a.text-dark:focus {
 
 .title-bg {
   border-radius: 0;
-  height: 100vh;
+  height: calc(100vh - 20px);
   position: relative;
   background-image: url("../img/photos/background.jpg");
   background-size: cover; }
@@ -6240,6 +6240,7 @@ nav.navbar {
     background-image: url("../img/photos/nidodape11.jpg"); }
 
 footer {
+  height: 20px;
   font-family: 'Julius Sans One', sans-serif;
   border-top: white solid 1px;
   font-size: 10px; }
@@ -6250,3 +6251,10 @@ footer {
   right: 0;
   margin: 1em;
   z-index: 100; }
+  .lang-chooser img {
+    opacity: 0.85;
+    transition: 0.2s ease-in-out;
+    border-radius: 3px; }
+    .lang-chooser img:hover {
+      transform: scale(1.1);
+      opacity: 1; }
